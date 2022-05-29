@@ -8,9 +8,9 @@ public class JokeServiceImpl implements JokeService {
 
     private final ChuckNorrisQuotes chuckNorrisQuotes;
 
-    public JokeServiceImpl(ChuckNorrisQuotes chuckNorrisQuotes) {
+    public JokeServiceImpl() {
 
-        this.chuckNorrisQuotes = new ChuckNorrisQuotes();
+        this.chuckNorrisQuotes =  new ChuckNorrisQuotes();
         //this is hard coding, it's not a good practice.
         // Not friendly for Dependency Injection. you better declare this as a bean
     }
